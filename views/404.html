@@ -5,17 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 
 <body>
-    <form>
-        <h1>404</h1>
-        <h2>Page not found</h2>
-        <a href="shop">Shop</a>
-        <a href="cart">Cart</a>
-        <a href="checkout">Checkout</a>
-        <a href="orders">Orders</a>
-        <a href="logout">Logout</a>
+    <header class="main-header">
+        <h1 class="header-title">404 page not found</h1>
+        <nav>
+            <a class="nav-link" href="/">Shop</a>
+            <a class="nav-link" href="admin/add-product">Add Product</a>
+        </nav>
+    </header>
+    <form class="error-container">
+        <h1 class="error-code">404</h1>
+        <h2 class="error-message">Page not found</h2>
     </form>
 </body>
 

@@ -12,17 +12,7 @@ html(lang="en")
         a.nav-link(href="/") Shop
         a.nav-link(href="admin/add-product") Add Product
     main
-      h1 Shop
-      ul
-        li
-          h2 Product 1
-          p Price: $19.99
-          p Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
-        li
-          h2 Product 2
-          p Price: $29.99
-          p Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
-        li
-          h2 Product 3
-          p Price: $39.99
-          p Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+     each product in prods
+      article.card.product-item
+       header.card__header
+        h1.product__title #{product.name}

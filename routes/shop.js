@@ -7,11 +7,17 @@ const rootDir = require('../Helper/path');
 
 const router = express.Router();
 
+
+router.get('/add-product', (req, res, next) => {
+    res.sendFile(path.join(rootDir, 'views', 'add-product.html'));
+})
+
 router.get('/', (req, res, next) => {
     console.log(adminData.products);
-
-    res.render('shop', { prods: adminData.products, docTitle: 'Shop' });
+    const products = adminData.products;
+    res.render('shop', { prods: products, docTitle: 'Shop' });
 
 
 })
+
 module.exports = router
